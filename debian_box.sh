@@ -11,16 +11,15 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 cd ~/.vim/bundle
 git clone git://github.com/tpope/vim-sensible.git
-cd ~
-echo 'execute pathogen#infect()' >> ~/.vimrc
-echo 'set undodir^=~/.vim/undo' >> ~/.vimrc
 mkdir ~/.vim/undo
 
 cd ~
 git clone https://github.com/hoffoo/standard-box ./
 mv tmux.conf .tmux.conf
+mv bashrc .bashrc
 mv vimrc .vimrc
+source ~/.bashrc
 
 # http shits
-apt-get install lighttpd php5-cgi php5-common 
+# apt-get install lighttpd php5-cgi php5-common 
 

@@ -1,5 +1,5 @@
 export EDITOR=vim
-export LS_OPTIONS='--color=auto'
+export LS_OPTIONS='--color'
 
 eval "`dircolors`"
 

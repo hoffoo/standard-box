@@ -18,7 +18,7 @@ git clone https://github.com/hoffoo/standard-box
 cp standard-box/tmux.conf .tmux.conf
 cp standard-box/bashrc .bashrc
 cp standard-box/vimrc .vimrc
-source ~/.bashrc
+~/.bashrc
 
 # http shits
 # apt-get install lighttpd php5-cgi php5-common 

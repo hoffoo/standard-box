@@ -15,9 +15,9 @@ mkdir ~/.vim/undo
 
 cd ~
 git clone https://github.com/hoffoo/standard-box
-mv standard-box/tmux.conf .tmux.conf
-mv standard-box/bashrc .bashrc
-mv standard-box/vimrc .vimrc
+cp standard-box/tmux.conf .tmux.conf
+cp standard-box/bashrc .bashrc
+cp standard-box/vimrc .vimrc
 source ~/.bashrc
 
 # http shits

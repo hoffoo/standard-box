@@ -14,10 +14,10 @@ git clone git://github.com/tpope/vim-sensible.git
 mkdir ~/.vim/undo
 
 cd ~
-git clone https://github.com/hoffoo/standard-box ./
-mv tmux.conf .tmux.conf
-mv bashrc .bashrc
-mv vimrc .vimrc
+git clone https://github.com/hoffoo/standard-box
+mv standard-box/tmux.conf .tmux.conf
+mv standard-box/bashrc .bashrc
+mv standard-box/vimrc .vimrc
 source ~/.bashrc
 
 # http shits

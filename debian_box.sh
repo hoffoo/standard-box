@@ -16,6 +16,11 @@ echo 'execute pathogen#infect()' >> ~/.vimrc
 echo 'set undodir^=~/.vim/undo' >> ~/.vimrc
 mkdir ~/.vim/undo
 
+cd ~
+git clone https://github.com/hoffoo/standard-box ./
+mv tmux.conf .tmux.conf
+mv vimrc .vimrc
+
 # http shits
 apt-get install lighttpd php5-cgi php5-common 
 

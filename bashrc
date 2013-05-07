@@ -1,4 +1,3 @@
-
 export EDITOR=vim
 export LS_OPTIONS='--color=auto'
 

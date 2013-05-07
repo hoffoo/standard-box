@@ -1,8 +1,8 @@
 # hookup some basic shit on a new install
 
 apt-get update
-apt-get dist-upgrade
-apt-get install sudo vim curl git unzip screen build-essential tmux rsync
+apt-get --yes dist-upgrade
+apt-get install --yes sudo vim curl git unzip screen build-essential tmux rsync
 
 export EDITOR=vim
 
@@ -18,7 +18,6 @@ git clone https://github.com/hoffoo/standard-box
 /bin/cp -fb standard-box/tmux.conf .tmux.conf
 /bin/cp -fb standard-box/bashrc .bashrc
 /bin/cp -fb standard-box/vimrc .vimrc
-bash ~/.bashrc
 
 # http shits
 # apt-get install lighttpd php5-cgi php5-common 

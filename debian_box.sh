@@ -2,9 +2,12 @@
 
 apt-get update
 apt-get --yes dist-upgrade
-apt-get install --yes sudo vim curl git unzip screen build-essential tmux rsync
+apt-get install --yes sudo vim curl git unzip screen build-essential tmux rsync xtail
 
 export EDITOR=vim
+echo 'UseDns no' >> /etc/ssh/sshd_config
+/etc/ini.d/ssh reload
+	
 
 # setup vim with pathogen, vim-sensible, and basic vim setup
 mkdir -p ~/.vim/autoload ~/.vim/bundle

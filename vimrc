@@ -42,6 +42,7 @@ imap <C-n> <Esc>:noh<CR>
 map  <C-J> <C-W>j<C-W>_
 map  <C-K> <C-W>k<C-W>_
 map gr :tabprev<cr>
+map <C-c> "+y<CR>
 
 execute pathogen#infect()
 if version >= 703

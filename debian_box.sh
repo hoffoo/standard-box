@@ -25,6 +25,7 @@ git clone https://github.com/tpope/vim-surround.git
 git clone https://github.com/ervandew/supertab.git
 git clone https://github.com/kien/ctrlp.vim.git
 git clone https://github.com/Townk/vim-autoclose.git
+git clone https://github.com/hoffoo/vim-marin-misc.git
 
 
 # http shits

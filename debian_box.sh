@@ -19,15 +19,11 @@ git clone https://github.com/hoffoo/standard-box
 mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/undo
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 cd ~/.vim/bundle
-git clone https://github.com/hoffoo/vim-sensible.git
-git clone https://github.com/tpope/vim-sleuth.git
-git clone https://github.com/tpope/vim-surround.git
-git clone https://github.com/ervandew/supertab.git
-git clone https://github.com/kien/ctrlp.vim.git
-git clone https://github.com/Townk/vim-autoclose.git
-git clone https://github.com/hoffoo/vim-marin-misc.git
-
-
-# http shits
-# apt-get install lighttpd php5-cgi php5-common 
+git clone https://github.com/hoffoo/vim-sensible.git&
+git clone https://github.com/tpope/vim-sleuth.git&
+git clone https://github.com/tpope/vim-surround.git&
+git clone https://github.com/ervandew/supertab.git&
+git clone https://github.com/kien/ctrlp.vim.git&
+git clone https://github.com/Townk/vim-autoclose.git&
+git clone https://github.com/hoffoo/vim-marin-misc.git&
 

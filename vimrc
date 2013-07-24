@@ -10,7 +10,10 @@ set wrapmargin=0
 set hlsearch
 set nowrap
 set wmh=0
-set mouse=a
+set mouse=r
+set shiftwidth=4
+set tabstop=4
+set wmh=0
 cnoreabbrev W w
 set foldmethod=indent
 set foldnestmax=10

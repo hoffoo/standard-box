@@ -23,6 +23,10 @@ set foldminlines=1
 set filetype=auto
 syntax on
 
+set wildignore+=*.o
+set wildignore+=*.class
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
 set pastetoggle=<F10>
 inoremap <C-v> <F10><C-r>+<F10>
 inoremap {<cr> {<cr>}<esc>O

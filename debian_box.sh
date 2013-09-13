@@ -2,7 +2,7 @@
 
 apt-get update
 #apt-get --yes dist-upgrade
-apt-get install --yes sudo vim curl git unzip tmux screen build-essential rsync unison xtail dstat fail2ban pwgen
+apt-get install --yes sudo vim curl git unzip tmux build-essential rsync xtail dstat fail2ban pwgen
 
 export EDITOR=vim
 echo 'UseDns no' >> /etc/ssh/sshd_config

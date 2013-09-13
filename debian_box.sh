@@ -4,11 +4,15 @@ BACK=$(pwd)
 
 apt-get update
 #apt-get --yes dist-upgrade
-apt-get install --yes sudo vim curl git unzip tmux build-essential rsync xtail dstat fail2ban pwgen
+apt-get install --yes sudo vim curl git unzip tmux build-essential rsync xtail dstat fail2ban pwgen mlocate
 
 export EDITOR=vim
-echo 'UseDns no' >> /etc/ssh/sshd_config
-/etc/init.d/ssh reload
+
+if [[ $(grep 'UseDns' /etc/ssh/sshd_config) -ne 0 ]]
+then
+	echo 'UseDns no' >> /etc/ssh/sshd_config
+	/etc/init.d/ssh reload
+fi
 
 
 cd ~

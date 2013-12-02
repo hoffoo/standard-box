@@ -4,7 +4,7 @@ BACK=$(pwd)
 
 apt-get update
 #apt-get --yes dist-upgrade
-apt-get install --yes sudo vim curl git unzip tmux build-essential rsync xtail dstat fail2ban pwgen mlocate
+apt-get install --yes sudo vim curl git unzip tmux build-essential rsync xtail dstat fail2ban pwgen mlocate ntp
 
 export EDITOR=vim
 
@@ -41,6 +41,7 @@ git clone https://github.com/kien/ctrlp.vim.git
 git clone https://github.com/Townk/vim-autoclose.git
 git clone https://github.com/hoffoo/vim-marin-misc.git
 git clone https://github.com/vim-scripts/Align.git
+git clone https://github.com/christoomey/vim-tmux-navigator.git
 
 cd $BACK
 

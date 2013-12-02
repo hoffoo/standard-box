@@ -10,7 +10,7 @@ set wrapmargin=0
 set hlsearch
 set nowrap
 set wmh=0
-set mouse=r
+set mouse=
 set shiftwidth=4
 set tabstop=4
 set wmh=0

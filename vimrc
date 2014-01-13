@@ -1,4 +1,5 @@
 set nocursorline
+set backspace=indent,eol,start
 set laststatus=2
 set shell=/bin/bash
 set scrolloff=5
@@ -15,6 +16,9 @@ set shiftwidth=4
 set tabstop=4
 set wmh=0
 cnoreabbrev W w
+" Make file with quickfix
+command! -nargs=* Make write | make! <args> | cwindow
+
 set foldmethod=indent
 set foldnestmax=10
 set foldcolumn=0
@@ -50,6 +54,11 @@ map  <C-J> <C-W>j<C-W>_
 map  <C-K> <C-W>k<C-W>_
 map gr :tabprev<cr>
 map <C-c> "+y<CR>
+" get rid of f1
+nmap <F1> <nop>
+map <F1> <Esc>
+imap <F1> <Esc>
+map <space> :Make<cr>
 
 execute pathogen#infect()
 if version >= 703

@@ -31,9 +31,10 @@ fi
 # basic vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/undo
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
 cd ~/.vim/bundle
 
-git clone https://github.com/hoffoo/vim-sensible.git
+git clone https://github.com/tpope/vim-sensible.git
 git clone https://github.com/tpope/vim-sleuth.git
 git clone https://github.com/tpope/vim-surround.git
 git clone https://github.com/ervandew/supertab.git

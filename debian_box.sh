@@ -3,7 +3,7 @@
 BACK=$(pwd)
 
 apt-get update
-#apt-get --yes dist-upgrade
+apt-get --yes dist-upgrade
 apt-get install --yes sudo vim curl git unzip tmux build-essential rsync xtail dstat fail2ban pwgen mlocate ntp
 
 export EDITOR=vim

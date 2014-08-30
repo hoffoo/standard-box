@@ -30,7 +30,7 @@ fi
 
 # basic vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/undo
-curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+curl https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim >  ~/.vim/autoload/pathogen.vim
 
 cd ~/.vim/bundle
 

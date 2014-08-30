@@ -8,13 +8,6 @@ apt-get install --yes sudo vim curl git unzip tmux build-essential rsync xtail d
 
 export EDITOR=vim
 
-if [[ $(grep 'UseDns' /etc/ssh/sshd_config) -ne 0 ]]
-then
-	echo 'UseDns no' >> /etc/ssh/sshd_config
-	/etc/init.d/ssh reload
-fi
-
-
 cd ~
 git clone https://github.com/hoffoo/standard-box
 /bin/cp -fb standard-box/tmux.conf .tmux.conf
@@ -30,7 +23,7 @@ fi
 
 # basic vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/undo
-curl https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim >  ~/.vim/autoload/pathogen.vim
+curl -L https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim > ~/.vim/autoload/pathogen.vim
 
 cd ~/.vim/bundle
 
